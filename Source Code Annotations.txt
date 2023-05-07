@@ -1,0 +1,4 @@
+Component -> "1.X" means conponent will have different variants
+Component -> "1" means component without variant and is unique
+DHTML-SSX -> server side dynamic code 
+aControl -> Admin control

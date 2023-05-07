@@ -1,0 +1,20 @@
+In synchronous programming, we conceptualize code as a series of consecutive
+computing steps that solve a specific problem. Every operation is blocking, which
+means that only when an operation is completed, it is possible to execute the next
+one. This approach makes the code very easy to read, understand, and debug.
+
+On the other side, in asynchronous programming, some operations, such as reading
+from a file or performing a network request, are launched and then executed "in
+the background." When we invoke an asynchronous operation, the instruction
+that follows is executed immediately, even if the previous asynchronous operation
+has not finished yet. In this scenario, we need a way to get notified when an
+asynchronous operation completes, and then continue the execution flow using
+the results from the operation. The most basic mechanism to get notified about
+the completion of an asynchronous operation in Node.js is the callback, which
+is nothing more than a function invoked by the runtime with the result of an
+asynchronous operation.
+
+The callback is the most basic building block on which all other asynchronous
+mechanisms are based. In fact, without callbacks, we wouldn't have promises,
+and therefore not even async/await; we also wouldn't have streams or events.
+This is why it's important to know how callbacks work.
